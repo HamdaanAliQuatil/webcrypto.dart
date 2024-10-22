@@ -17,7 +17,6 @@ library impl_js;
 import 'dart:async';
 import 'dart:typed_data';
 
-import 'package:flutter/foundation.dart';
 import 'package:webcrypto/src/impl_interface/impl_interface.dart';
 
 import '../webcrypto/webcrypto.dart';
@@ -83,4 +82,7 @@ final class _WebCryptoImpl implements WebCryptoImpl {
 
   @override
   final rsaOaepPublicKey = const _StaticRsaOaepPublicKeyImpl();
+
+  @override
+  final hkdfSecretKey = const _StaticHkdfSecretKeyImpl();
 }
